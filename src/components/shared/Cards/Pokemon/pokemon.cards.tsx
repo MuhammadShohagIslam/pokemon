@@ -15,7 +15,7 @@ const Pokemons = ({ data }: { data: any[] }) => {
     return (
         <section className='w-4/5 mx-auto'>
             {/* Pokemon Card */}
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-4 gap-3'>
                 {paginatedPokemon.length > 0 ? paginatedPokemon.map((pokemon) => (
                     <Pokemon key={pokemon.id} pokemon={pokemon} />
                 )) : (

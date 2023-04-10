@@ -20,7 +20,7 @@ const Pagination = (props: PaginationPropsType) => {
             {[...Array(pages).keys()].map((number) => (
                 <button
                     key={number}
-                    className={`px-3 py-[3px] mr-1 leading-tight text-gray-700 bg-white border border-blue-300 hover:bg-gray-100 hover:text-gray-700   ${page === number + 1 ? "bg-blue-400 text-white" : ""
+                    className={`px-3 py-[3px] mr-1 leading-tight text-gray-700  border border-blue-300 hover:bg-blue-400 hover:text-white transition-all  ${page === number + 1 ? "bg-blue-400 text-white" : ""
                         }`}
                     onClick={() => setPage(number + 1)}
                 >
